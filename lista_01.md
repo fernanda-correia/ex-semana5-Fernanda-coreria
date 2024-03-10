@@ -165,6 +165,39 @@ Chamando os Métodos:
 
 Dica: Utilize console.log() para exibir as informações!
 
+```class Animal {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    descrever() {
+        console.log(`Esse é o ${this.nome}` + `, ele tem ${this.idade} anos`);
+    }
+}
+
+class Gato extends Animal {
+    constructor(nome, idade, cor) {
+    super (nome, idade);
+    this.cor = cor;
+    }
+
+    miar() {
+        console.log(`Miau`);
+    }
+
+    descrever() {
+        console.log(`Esse é o ${this.nome}` + `, ele tem ${this.idade} anos e é da cor ${this.cor}`);
+    }
+}
+
+let gato = new Gato ("Miguel", 2, "preta");
+gato.miar();
+gato.descrever();
+
+let cachorro = new Animal ("Toby", 5);
+cachorro.descrever();
+```
 ______
 
 
