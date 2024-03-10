@@ -122,7 +122,8 @@ Dica: Utilize `console.log()` para exibir as informações!
 
 resposta:
 
-``` class Animal {
+```
+class Animal {
     constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
@@ -165,7 +166,8 @@ Chamando os Métodos:
 
 Dica: Utilize console.log() para exibir as informações!
 
-```class Animal {
+```
+class Animal {
     constructor(nome, idade) {
         this.nome = nome;
         this.idade = idade;
