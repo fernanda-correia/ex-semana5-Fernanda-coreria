@@ -220,6 +220,29 @@ Chamando o Método para Ver o Total:
 
 Dica: Utilize console.log() para exibir as informações!
 
+```
+class SomadorDeNotas {
+    constructor(total){
+        this.total = 0
+    }
+
+    adicionarNota(nota){
+        return this.total += nota;
+    }
+
+    verTotal(){
+        console.log(this.total);
+    }
+}
+
+let somador = new SomadorDeNotas;
+somador.adicionarNota(5);
+somador.adicionarNota(7);
+somador.adicionarNota(9);
+somador.adicionarNota(8.9);
+
+somador.verTotal();
+```
 
 ______
 
