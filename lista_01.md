@@ -162,8 +162,10 @@ let cachorro = new Animal ("Toby", 5);
 cachorro.descrever();
 
 let gato = new Animal ("Miguel", 2);
-gato.descrever(); ```
+gato.descrever();
+```
 ______
+
 
 **9)** Vamos criar um programa em JavaScript para somar notas!
 
