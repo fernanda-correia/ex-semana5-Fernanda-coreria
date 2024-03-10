@@ -145,7 +145,24 @@ Chamando os Métodos:
 
 Dica: Utilize console.log() para exibir as informações!
 
+resposta:
 
+``` class Animal {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    descrever() {
+        console.log(`Esse é o ${this.nome}` + `, ele tem ${this.idade} anos`);
+    }
+}
+
+let cachorro = new Animal ("Toby", 5);
+cachorro.descrever();
+
+let gato = new Animal ("Miguel", 2);
+gato.descrever(); ```
 ______
 
 **9)** Vamos criar um programa em JavaScript para somar notas!
