@@ -232,7 +232,7 @@ class SomadorDeNotas {
     }
 
     verTotal(){
-        console.log(this.total);
+        console.log(`A soma das notas é igual a ${this.total}`);
     }
 }
 
@@ -265,3 +265,45 @@ Agora, sua tarefa é escrever um código em JavaScript que crie as classes Funci
 - Para cada objeto, chame o método calcularSalario() e mostre o salário calculado no console.
 
 Certifique-se de explicar cada parte do código utilizando comentários, explicando para que serve cada atributo e método, bem como a lógica por trás do cálculo de salário para o tipo de funcionário Professor.
+
+```
+// é criada a classe funcionário com seus atributos
+
+class Funcionario {
+    constructor(nome, idade, salarioBase){
+    this.nome = nome;
+    this.idade = idade;
+    this.salarioBase = salarioBase;
+    }
+    
+// o método calcular salario genérico é igualado ao salário base, já que não existem mais informações sobre o cálculo
+    calcularSalario() {
+       return salario = salarioBase;
+    }
+}
+
+// é criada a classe professor que pega os atributos de funcionário
+class Professor extends Funcionario {
+    constructor(nome, idade, salarioBase, disciplina, horas) {
+    super (nome, idade, salarioBase) 
+// são adicionados dois novos atributos a classe professor além dos já existentes em funcionário
+    this.disciplina = disciplina;
+    this.horas = horas;
+    }
+
+// o cálculo do salário é feito multiplicando o número de horas por 14 (valor por cada hora)
+    calcularSalario(){
+// o console.log só leva em consideração os atributos nome e horas
+        console.log (`Salário do ${this.nome} é igual a ` + 14 * this.horas + ` reais`);
+    }
+    
+}
+
+// é criada a variável professor 1, com todos seus atributos e cálculo de salário
+let professor1 = new Professor ("Cris", 40, 2000, "matemática", 50);
+professor1.calcularSalario();
+
+// é criada a variável professor 2, com todos seus atributos e cálculo de salário
+let professor2 = new Professor ("Filipe", 30, 2500, "história", 60);
+professor2.calcularSalario();
+```
